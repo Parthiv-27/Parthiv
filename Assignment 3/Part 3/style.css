@@ -1,6 +1,13 @@
 /* General setup */
 
+@font-face {
+  font-family: 'Lora';
+  src: url(Lora-VariableFont_wght.ttf);
+  font-family: 'raleway';
+  src: url(Raleway-VariableFont_wght.ttf);
+}
 * {
+  font-size: 10px;
   box-sizing: border-box;
 }
 
