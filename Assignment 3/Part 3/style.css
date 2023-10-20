@@ -15,6 +15,7 @@ body {
   margin: 0 auto;
   min-width: 1000px;
   max-width: 1400px;
+  font-family: 'Young Serif', serif;
 }
 
 /* Layout */
@@ -50,3 +51,14 @@ header, footer {
 }
 
 /* WRITE YOUR CODE BELOW HERE */
+h1 {
+  font-family: 'raleway', sans-serif;
+  text-align: center;
+  font-size: 4em;
+  letter-spacing: 2px;
+}
+h2 {
+  font-family: 'Kameron', serif;
+  font-size: 2em;
+  letter-spacing: 2px;
+}
