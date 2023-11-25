@@ -75,8 +75,8 @@ class Ball extends Shape {
           }
         }
       }
-    }
-  }
+   }
+}
 
 
 class EvilCircle extends Shape {
@@ -164,12 +164,12 @@ window.addEventListener("keydown", (e) => {
   }
 });
 
-const ballCount = document.getElementById('ballCount');
+const ball = document.getElementById('ball');
 let remainingBalls = balls.length;
 
 function updateBallCount() {
   remainingBalls = balls.filter(ball => ball.exists).length;
-  ballCount.textContent = `Ball count: ${remainingBalls}`;
+  ball.textContent = `Ball count: ${remainingBalls}`;
 }
 
 function loop() {
@@ -177,10 +177,13 @@ function loop() {
    ctx.fillRect(0, 0,  width, height);
 
    for (const ball of balls) {
-     ball.draw();
-     ball.update();
-     ball.collisionDetect();
+     if (ball.exists) {
+      ball.draw();
+      ball.update();
+      ball.collisionDetect();
+     }
    }
+
 
    evilCircle.draw();
    evilCircle.checkBounds();
